@@ -39,9 +39,11 @@
     "type": "git",
     "url": "https://github.com/ahdcreative/eslint-config-ahdcreative.git"
   },
-  "branches" : [
-    "main"
-  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "files": [
     "index.js",
     "LICENSE",
