@@ -1,0 +1,32 @@
+{
+  "name": "@ahdcreative/eslint-config-ahd",
+  "version": "1.0.0",
+  "description": "Eslint config used by AHD projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --config index.js",
+    "semantic-release": "semantic-release"
+  },
+  "author": "ahdcreative <hello@ahd-creative.agency> (http://ahd-creative.agency/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "semantic-release": "^21.0.1"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
