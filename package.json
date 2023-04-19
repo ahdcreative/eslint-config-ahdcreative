@@ -1,6 +1,6 @@
 {
   "name": "@ahdcreative/eslint-config-ahd",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Eslint config used by AHD projects",
   "main": "index.js",
   "scripts": {
