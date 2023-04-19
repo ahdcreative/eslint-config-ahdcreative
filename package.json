@@ -1,6 +1,6 @@
 {
   "name": "@ahdcreative/eslint-config-ahd",
-  "version": "1.0.2",
+  "version": "0.0.0-development",
   "description": "Eslint config used by AHD projects",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
   "author": "ahdcreative <hello@ahd-creative.agency> (http://ahd-creative.agency/)",
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "eslint": "^7.21.0",
     "semantic-release": "^21.0.1"
   },
@@ -30,21 +35,8 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "release": {
-    "branches": [
-      "+([0-9])?(.{+([0-9]),x}).x",
-      "main",
-      "next",
-      "next-major",
-      {
-        "name": "beta",
-        "prerelease": true
-      },
-      {
-        "name": "alpha",
-        "prerelease": true
-      }
-    ]
-  },
-  "plugins": ["@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/npm"]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahdcreative/eslint-config-ahdcreative.git"
+  }
 }
