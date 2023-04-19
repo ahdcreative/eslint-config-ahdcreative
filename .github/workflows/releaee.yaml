@@ -1,0 +1,30 @@
+name: Release Pipeline
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  relese:
+    name: Semantic Release Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '18.x'
+      - run: npm ci
+      - run: npx semantic-release 
+  publish:
+    name: Publish to NPM
+    runs-on: ubuntu-latest
+    needs: [release]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '18.x'
+          registru-url: https://registry.npmjs.org/
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
