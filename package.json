@@ -4,7 +4,7 @@
   "description": "Eslint config used by AHD projects",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint --config index.js",
+    "test": "eslint --config index.js",
     "semantic-release": "semantic-release"
   },
   "author": "ahdcreative <hello@ahd-creative.agency> (http://ahd-creative.agency/)",
